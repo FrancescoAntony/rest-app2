@@ -1,3 +1,19 @@
+/**
+ * Nome do arquivo: firebase.js
+ * Data de criação: 18/05/2024
+ * Autor: Francesco Antony
+ * Matrícula: 01609346
+ *
+ * Descrição:
+ * Este arquivo JavaScript é responsável por implementar as configurações das variáveis de ambiente (SDK) da hospedagem escolhida (firebase) onde serão realizados os testes.
+ *
+ * Este script é parte o curso de ADS.
+ */
+
+
+
+
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
