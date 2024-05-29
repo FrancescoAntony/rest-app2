@@ -10,7 +10,9 @@
  * Este script é parte o curso de ADS.
  */
 
-
+async function createFiel(new_cliente){
+    const docRef = await addDoc(collection(database, "clientes"), new_cliente);
+  }
 
 // READ //
 
