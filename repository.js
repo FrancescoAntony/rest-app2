@@ -23,13 +23,13 @@ VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33', '5328834359', 'tony@outlook.
 
 UPDATE clientes SET email = 'antony@gmail.com.br' where id = 1;
 
-SELECT * from clientes;
+SELECT * from WHERE id = 1;
 
 DELETE from clientes WHERE id = 1;
 
 -- Armazenamento e consultas (Tabela cliente_serviço) --
 
-INSERT INTO cliente_servico (id, cliente_associado, data_ordem, desc_serviço, custo_estimado, status_servico) VALUES (UUID(), cliente_associado, 'data_ordem', 'desc_serviço', 'custo_estimado', 'status_serviço', custo_final);
+INSERT INTO cliente_servico (id, cliente_associado, data_ordem, desc_serviço, custo_estimado, status_servico) VALUES (UUID(), cliente_associado, 'data_ordem', 'desc_serviço', 'custo_estimado', status_serviço, custo_final);
 
 UPDATE cliente_servico SET status_servico = 'Em andamento', 'Concluído', 'Cancelado' where id = 'UUID() da ordem';
 UPDATE custo_final SET custo_final = x where id = cliente_associado;
