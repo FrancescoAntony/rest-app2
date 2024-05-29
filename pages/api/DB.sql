@@ -34,6 +34,9 @@ DELETE from clientes WHERE id = 1;
 
 /* TABELA DE ORDEM DE SERVIÇO */
 
+/* Habilitando a chave estrangeira */
+PRAGMA foreign_keys = ON;
+
 create table cliente_serviço (
     id varchar(30) primary key,
     cliente_associado integer,
