@@ -10,7 +10,7 @@
  * Este script é parte o curso de ADS.
  */
 
-async function createFiel(new_cliente){
+async function create_user(new_cliente){
     const docRef = await addDoc(collection(database, "clientes"), new_cliente);
   }
 
