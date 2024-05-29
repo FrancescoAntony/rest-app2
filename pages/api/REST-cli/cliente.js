@@ -40,7 +40,8 @@ export default async function handler(req, res) {
 
     try {
       // Adicione um novo documento à coleção 'clientes'
-      const docRef = await addDoc(collection(database, "clientes"), new_cliente);
+      // const docRef = await addDoc(collection(database, "clientes"), new_cliente);
+      create_user(new_cliente)
       res.status(201).json({ id: docRef.id });
     } catch (error) {
       res.status(500).json({ message: "Erro ao criar cliente" });
