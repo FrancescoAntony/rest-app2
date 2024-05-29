@@ -23,7 +23,7 @@ VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33', '5328834359', 'tony@outlook.
 
 UPDATE clientes SET email = 'antony@gmail.com.br' where id = 1;
 
-SELECT * from WHERE id = 1;
+SELECT * from clientes WHERE id = 1;
 
 DELETE from clientes WHERE id = 1;
 
