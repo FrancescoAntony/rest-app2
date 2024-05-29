@@ -1,14 +1,11 @@
 /**
- * Nome do arquivo: exemplo.js
- * Data de criação: 30/04/2024
- * Autor: João Silva
- * Matrícula: 123456
+ * Nome do arquivo: REST-cli.js
+ * Data de criação: 08/05/2024
+ * Autor: Francesco Antony
+ * Matrícula: 01609346
  *
  * Descrição:
- * Este arquivo JavaScript é responsável por implementar as funcionalidades
- * de interação do usuário com a interface gráfica do módulo de vendas.
- * Aqui são tratados eventos de cliques, validações de entrada e comunicação
- * com APIs para envio e recebimento de dados.
+ * Este arquivo JavaScript é responsável por implementar as funcionalidades respectivas de uma APi-RESTFULL, com todos os métodos de requisição.
  *
  * Este script é parte o curso de ADS.
  */
@@ -16,7 +13,7 @@
 
 export default function handler(req, res){
     if(req.method === "GET") {
-        res.status(400).json({Retornando: "Retornando o teste."})
+        res.status(400).json({Retornando: "Retornando o teste"})
     }
 
     if(req.method === "POST") {
