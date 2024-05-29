@@ -1,5 +1,18 @@
-// Importe as funções necessárias do Firebase
+/**
+ * Nome do arquivo: REST-cli.js
+ * Data de criação: 08/05/2024
+ * Autor: Francesco Antony
+ * Matrícula: 01609346
+ *
+ * Descrição:
+ * Este arquivo JavaScript é responsável por implementar as funcionalidades respectivas de uma APi-RESTFULL, com todos os métodos de requisição de dados do usuário.
+ *
+ * Este script é parte o curso de ADS.
+ */
 
+
+
+// Importe as funções necessárias do Firebase
 import { app, collection, getDocs, getDoc, addDoc, updateDoc, doc, deleteDoc } from 'firebase/firestore';
 import { database } from '@/Deploy-js/firebase'; // Certifique-se de ajustar o caminho correto
 

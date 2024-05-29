@@ -1,3 +1,17 @@
+/**
+ * Nome do arquivo: REST-cli.js
+ * Data de criação: 08/05/2024
+ * Autor: Francesco Antony
+ * Matrícula: 01609346
+ *
+ * Descrição:
+ * Este arquivo JavaScript é responsável por implementar as funcionalidades respectivas de uma APi-RESTFULL, com todos os métodos de requisição de dados do usuário.
+ *
+ * Este script é parte o curso de ADS.
+ */
+
+
+
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import openDB from "@/database/dbconfig";
 
