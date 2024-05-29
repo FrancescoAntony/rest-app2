@@ -13,26 +13,26 @@
 
 /* TABELA CLIENTE */
 
-create table clientes {
+create table clientes (
     id int primary key auto_increment,
     nome varchar(15),
     endereço varchar(20),
     telefone varchar(15),
-    e-mail varchar(20)
-};
+    email varchar(20)
+);
 
-INSERT INTO cliente (nome, endereço, telefone, e-mail) VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33' '(53) 2883-4359' 'tony@outlook.com.br');
+INSERT INTO cliente (nome, endereço, telefone, email) VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33' '(53) 2883-4359' 'tony@outlook.com.br');
 
-UPDATE clientes SET e-mail = 'antony@gmail.com.br' where id = 1;
+UPDATE clientes SET email = 'antony@gmail.com.br' where id = 1;
 
 SELECT * from clientes;
 
-DELETE * from clientes WHERE id = 1;
+DELETE from clientes WHERE id = 1;
 
 
 /* TABELA DE ORDEM DE SERVIÇO */
 
-create table cliente_serviço {
+create table cliente_serviço (
     id varchar(30) primary key,
     cliente_associado int,
     data_ordem date,
@@ -41,7 +41,7 @@ create table cliente_serviço {
     custo_final int,
     status_servico ENUM('Em andamento', 'Concluído', 'Cancelado'),
     FOREIGN KEY (cliente_associado) REFERENCES clientes(id)
-}
+);
 
 INSERT INTO cliente_servico (id, cliente_associado, data_ordem, desc_serviço, custo_estimado, status_servico) VALUES (UUID(), cliente_associado, 'data_ordem', 'desc_serviço', 'custo_estimado', 'status_serviço', custo_final);
 
@@ -50,4 +50,4 @@ UPDATE custo_final SET custo_final = x where id = cliente_associado;
 
 SELECT * from cliente_servico;
 
-DELETE * from cliente_servico WHERE id = "UUID() da ordem";
+DELETE from cliente_servico WHERE id = "UUID() da ordem";
