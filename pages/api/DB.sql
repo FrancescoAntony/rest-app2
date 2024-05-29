@@ -40,7 +40,7 @@ PRAGMA foreign_keys = ON;
 create table cliente_serviço (
     id varchar(30) primary key,
     cliente_associado integer,
-    data_ordem datetime default CURRENT_TIME,
+    data_ordem datetime default CURRENT_TIMESTAMP,
     desc_serviço text not null,
     custo_estimado integer,
     custo_final integer,
