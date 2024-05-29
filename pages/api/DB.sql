@@ -27,7 +27,7 @@ INSERT INTO clientes (nome, endereço, telefone, email) VALUES ('Tony Yuri', 'Ru
 
 UPDATE clientes SET email = 'antony@gmail.com.br' where id = 1;
 
-SELECT * from clientes;
+SELECT * from clientes WHERE id = 1;
 
 DELETE from clientes WHERE id = 1;
 
@@ -36,16 +36,16 @@ DELETE from clientes WHERE id = 1;
 
 create table cliente_serviço (
     id varchar(30) primary key,
-    cliente_associado int,
-    data_ordem date,
+    cliente_associado integer,
+    data_ordem datetime default CURRENT_TIME,
     desc_serviço text,
-    custo_estimado int,
-    custo_final int,
-    status_servico ENUM('Em andamento', 'Concluído', 'Cancelado'),
+    custo_estimado integer,
+    custo_final integer,
+    status_servico text,
     FOREIGN KEY (cliente_associado) REFERENCES clientes(id)
 );
 
-INSERT INTO cliente_servico (id, cliente_associado, data_ordem, desc_serviço, custo_estimado, status_servico) VALUES (UUID(), cliente_associado, 'data_ordem', 'desc_serviço', 'custo_estimado', 'status_serviço', custo_final);
+INSERT INTO cliente_servico (id, cliente_associado, data_ordem, desc_serviço, custo_estimado, status_servico) VALUES (UUID(), cliente_associado, data_ordem, 'desc_serviço', 'custo_estimado', 'status_serviço', custo_final);
 
 UPDATE cliente_servico SET status_servico = 'Em andamento', 'Concluído', 'Cancelado' where id = 'UUID() da ordem';
 UPDATE custo_final SET custo_final = x where id = cliente_associado;
