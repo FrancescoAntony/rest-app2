@@ -11,17 +11,19 @@
  */
 
 
+
+
 /* TABELA CLIENTE */
 
 create table clientes (
-    id int primary key auto_increment,
+    id integer primary key autoincrement,
     nome varchar(15),
     endereço varchar(20),
     telefone varchar(15),
     email varchar(20)
 );
 
-INSERT INTO cliente (nome, endereço, telefone, email) VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33' '(53) 2883-4359' 'tony@outlook.com.br');
+INSERT INTO clientes (nome, endereço, telefone, email) VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33' '(53) 2883-4359' 'tony@outlook.com.br');
 
 UPDATE clientes SET email = 'antony@gmail.com.br' where id = 1;
 
