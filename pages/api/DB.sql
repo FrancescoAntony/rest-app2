@@ -17,10 +17,10 @@
 
 create table clientes (
     id integer primary key autoincrement,
-    nome varchar(15),
-    endereço varchar(20),
-    telefone varchar(15),
-    email varchar(20)
+    nome varchar(15) not null,
+    endereço varchar(20) not null,
+    telefone varchar(15) not null,
+    email varchar(20) not null
 );
 
 INSERT INTO clientes (nome, endereço, telefone, email) VALUES ('Tony Yuri', 'Rua Vasconcelos, Joaquim 33' '(53) 2883-4359' 'tony@outlook.com.br');
@@ -41,10 +41,10 @@ create table cliente_serviço (
     id varchar(30) primary key,
     cliente_associado integer,
     data_ordem datetime default CURRENT_TIME,
-    desc_serviço text,
+    desc_serviço text not null,
     custo_estimado integer,
     custo_final integer,
-    status_servico text,
+    status_servico text not null,
     FOREIGN KEY (cliente_associado) REFERENCES clientes(id)
 );
 
