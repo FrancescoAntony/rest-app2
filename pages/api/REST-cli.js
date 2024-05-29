@@ -16,7 +16,7 @@
 
 export default function handler(req, res){
     if(req.method === "GET") {
-        res.status(400).json({Retornando: "Retornando o teste"})
+        res.status(400).json({Retornando: "Retornando o teste."})
     }
 
     if(req.method === "POST") {
