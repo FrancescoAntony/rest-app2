@@ -1,3 +1,18 @@
+/**
+ * Nome do arquivo: clientes-html.js
+ * Data de criação: 01/06/2024
+ * Autor: Francesco Antony
+ * Matrícula: 01609346
+ *
+ * Descrição:
+ * Este arquivo JavaScript mostra a inicialização de dois conteiners que mostra o CRUD básico da 
+ * tabela HTML de clientes para à tabela ordens de serviços assim que for adicionar um cliente.
+ *
+ * Este script é parte o curso de ADS.
+ */
+
+
+
 import { useState } from 'react';
 
 // Função para validar email
